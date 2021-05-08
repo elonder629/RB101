@@ -9,6 +9,8 @@
 Kernel.puts("Welcome to Calculator")
 
 Kernel.puts("What's the first number?")
-num1 = Kernel.gets()
+num1 = Kernel.gets().chomp()
 
-Kernel.puts("The number is " num1 + "!")
+
+Kernel.puts(num1.inspect())
+Kernel.puts("The number is " + num1 + "!")
