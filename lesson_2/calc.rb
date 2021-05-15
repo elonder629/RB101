@@ -5,12 +5,18 @@
 
 # answer = Kernel.gets()
 # Kernel.puts(answer)
+
 def prompt(message)
   Kernel.puts("=> #{message}")
 end
 
 def valid_number?(num)
-  num.to_i() != 0
+  num = num.split(//)
+  test = nil
+  (0..9).each do |i|
+    test = true if num[0].include? i.to_s
+  end
+  test
 end
 
 def operation_to_message(op)
@@ -39,6 +45,7 @@ loop do
     break
   end
 end
+
 loop do # main loop
   prompt("Hi #{name}")
   loop do
