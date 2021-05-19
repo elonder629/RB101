@@ -3,7 +3,7 @@ def prompt(message)
 end
 
 def float?(input)
-  /\d/.match(input) && /^-?\d*\.?\d*$/.match(input)
+  /\d/.match(input) && /^-?\d*\,*\.?\d*$/.match(input)
 end
 
 def int?(input)
