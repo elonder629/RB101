@@ -1,10 +1,11 @@
 VALID_CHOICES = ['rock', 'paper', 'scissors', 'lizard', 'spock']
-WIN_TABLE = {rock: {'scissors','lizard'},paper: {'rock','spock'}, scissors: {'paper','lizard'}, lizard: {'spock','paper'}, spock: {'scissors', 'rock'}}
+WIN_TABLE = {rock: ['scissors','lizard'],
+             paper: ['rock','spock'],
+             scissors: ['paper','lizard'],
+             lizard: ['spock','paper'],
+             spock: ['scissors', 'rock']}
 def display_results(choice, computer_choice)
-  if (choice == 'rock' && computer_choice == 'scissors') ||
-     (choice == 'paper' && computer_choice == 'rock') ||
-     (choice == 'scissors' && computer_choice == 'paper')
-
+  if WIN_TABLE[choice.to_sym].include?("computer_choice")
     prompt("You won!")
   elsif choice == computer_choice
     prompt("Its a tie!")
