@@ -1,0 +1,28 @@
+Q1)
+    numbers = [1, 2, 2, 3]
+    numbers.uniq
+
+    puts numbers
+
+    A)
+    1
+    2
+    3
+Q2)
+    A) '!' is a method that returns the opposite truth value of an object,
+        however it can also be part of a method name usually indicating a method
+        that mutates the caller, the '?' is the ternary operator of if.. else statements
+        i.e true ? true : False
+
+    1> the != is a conditional operator, used in logic statements
+    2> Putting ! before something will return the objects opposite truth value
+    3> putting a ! after something can sometimes change what method you are using
+       because method names can contain '!' but if it isnt a real method name you
+       will receive an error because there is no method of that names
+    4> putting '?' before something will cause a sytax error because it is the
+       ternary operator for if else
+    5> putting '?' after something may change the method you are using other wise
+       its simply a syntax error
+    6>
+       Putting '!!' before something will return the truth value of an object
+Q3)
